@@ -14,26 +14,26 @@ const listFood = async (req, res) => {
 }
 
 // add food
-const addFood = async (req, res) => {
+export const addFood = async (req, res) => {
+  try {
+    const { name, description, price, category } = req.body;
+    const image = req.file.filename; // ✅ Only filename, no path
 
-    try {
-        let image_filename = `${req.file.filename}`
+    const newFood = new foodModel({
+      name,
+      description,
+      price,
+      category,
+      image,
+    });
 
-        const food = new foodModel({
-            name: req.body.name,
-            description: req.body.description,
-            price: req.body.price,
-            category:req.body.category,
-            image: image_filename,
-        })
+    await newFood.save();
+    res.status(200).json({ message: "Food added successfully", food: newFood });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to add food" });
+  }
+};
 
-        await food.save();
-        res.json({ success: true, message: "Food Added" })
-    } catch (error) {
-        console.log(error);
-        res.json({ success: false, message: "Error" })
-    }
-}
 
 // delete food
 const removeFood = async (req, res) => {

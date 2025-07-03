@@ -1,21 +1,23 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import './FoodItem.css';
 import { assets } from '../../assets/assets';
 import { StoreContext } from '../../Context/StoreContext';
 
-const FoodItem = ({ image, name, price, desc, id }) => {
-  const [itemCount, setItemCount] = useState(0);
+const FoodItem = ({ image, name, price, desc, id, isLocal }) => {
   const { cartItems, addToCart, removeFromCart, url, currency } = useContext(StoreContext);
 
-  // If cartItems is undefined (still loading), show a fallback UI or skip render
   if (!cartItems) {
-    return null; // or <div>Loading item...</div>
+    return null;
   }
 
   return (
     <div className='food-item'>
       <div className='food-item-img-container'>
-        <img className='food-item-image' src={`${url}/images/${image}`} alt={name} />
+        <img
+          className='food-item-image'
+          src={isLocal ? assets[image] : `${url}/images/${image}`} // ✅ Load correctly
+          alt={name}
+        />
 
         {cartItems?.[id] > 0 ? (
           <div className="food-item-counter">
