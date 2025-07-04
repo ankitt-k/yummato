@@ -2,7 +2,7 @@
 
 A full-stack food delivery web app built using React, Node.js, Express, and MongoDB, with image upload support for admins and persistent cart for users.
 
- #Features
+ # Features
  
 🔓 User Authentication (JWT)
 
@@ -18,16 +18,22 @@ A full-stack food delivery web app built using React, Node.js, Express, and Mong
 
 🌍 Fully responsive frontend
 
-#preview
+# preview
 
 
 
 # Tech Stack
-Frontend 	   Backend           	    Database	              Hosting
-React.js  	 Node.js + Express	    MongoDB	                 Render
+Frontend 	- React.js  	   
+Backend   -Node.js + Express	      	  
+Database	 - MongoDB	 
+Hosting  - render
 
 
- #Live Link
+     
+              
+
+
+ # Live Link
 🔗 Frontend:      https://food-del-frontend-dvb9.onrender.com/
 🔗 admin panel : https://food-del-admin-6u02.onrender.com
 
