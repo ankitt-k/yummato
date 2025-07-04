@@ -20,6 +20,11 @@ A full-stack food delivery web app built using React, Node.js, Express, and Mong
 
 # preview
 
+![food1](https://github.com/user-attachments/assets/f20676c5-1a03-4e4c-b041-15efc66e7aa9)
+
+![food2](https://github.com/user-attachments/assets/19920353-d99c-48a5-932d-5845ca1ce5e7)
+
+![food3](https://github.com/user-attachments/assets/d8482fac-0e3b-449e-a517-c30afb5271ba)
 
 
 # Tech Stack
