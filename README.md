@@ -34,7 +34,8 @@ Hosting  - render
 
 
  # Live Link
-🔗 Frontend:      https://food-del-frontend-dvb9.onrender.com/
+🔗 Frontend:      https://food-del-frontend-dvb9.onrender.com
+
 🔗 admin panel : https://food-del-admin-6u02.onrender.com
 
 
