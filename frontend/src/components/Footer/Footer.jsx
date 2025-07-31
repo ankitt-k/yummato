@@ -31,7 +31,7 @@ Fast, fresh, and just a tap away!.</p>
         <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
             <ul>
-                <li>+1-212-456-7890</li>
+                <li>+91- 9140817752</li>
                 <li>contact@tomato.com</li>
             </ul>
         </div>
