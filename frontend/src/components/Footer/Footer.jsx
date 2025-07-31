@@ -9,7 +9,10 @@ const Footer = () => {
         <div className="footer-content-left">
          <img src={assets.logo} alt="logo" className="footer-logo" />
 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Download Yummato and order your favorite meals on the go!
+From local street food to top-rated restaurants, Yummato delivers your cravings in minutes.
+Track your order live, enjoy exclusive app-only discounts, and explore new cuisines every day.
+Fast, fresh, and just a tap away!.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
